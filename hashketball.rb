@@ -130,7 +130,7 @@ def game_hash
 end
 
 def num_points_scored(player)
-  game_hash[:home].each do |k|
+  game_hash[:home][:players].each do |k|
     k.each do |innerkey, innervalue|
 
         binding.pry
