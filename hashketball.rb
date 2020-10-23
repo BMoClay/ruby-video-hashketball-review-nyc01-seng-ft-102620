@@ -1,4 +1,6 @@
 # Write your code below game_hash
+require './hashketball.rb'
+require 'pry'
 
 def game_hash
   {
@@ -127,4 +129,12 @@ def game_hash
   }
 end
 
-# Write code here
+def num_points_scored(player)
+  game_hash.each do |k,v|
+    k.each do |innerkey, innervalue|
+
+        binding.pry
+
+    end
+  end
+end
