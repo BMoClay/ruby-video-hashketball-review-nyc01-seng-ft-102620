@@ -136,12 +136,12 @@ def num_points_scored(players_name)
   end
   game_hash[:away][:players].each do |k|
     all_players << k
-  
+
 
 
 
         binding.pry
 
-    end
+    
   end
 end
