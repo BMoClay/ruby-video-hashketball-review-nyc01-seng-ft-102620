@@ -131,17 +131,12 @@ end
 
 def num_points_scored(players_name)
   all_players = []
-  game_hash[:home][:players].each do |k|
-    all_players << k
-  end
-  game_hash[:away][:players].each do |k|
-    all_players << k
-
-
-
-
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+  #game_hash[:home][:players].each do |k|
+  #  all_players << k
+  #end
+  #game_hash[:away][:players].each do |k|
+    #all_players << k
         binding.pry
-
-    
   end
 end
