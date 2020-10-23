@@ -129,9 +129,16 @@ def game_hash
   }
 end
 
-def num_points_scored(player)
+def num_points_scored(players_name)
+  all_players = []
   game_hash[:home][:players].each do |k|
-    k.each do |innerkey, innervalue|
+    all_players << k
+  end
+  game_hash[:away][:players].each do |k|
+    all_players << k
+  end
+
+
 
         binding.pry
 
